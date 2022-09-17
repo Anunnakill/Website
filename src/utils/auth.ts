@@ -2,8 +2,7 @@ import { toRaw } from "vue";
 import ENV from "@/assets/env";
 import { encrypt } from "./crypto";
 import { useWallet } from "@/store";
-import { createDiscreteApi } from "naive-ui";
-const { message } = createDiscreteApi(["message"]);
+import { message } from "@/utils/command";
 
 const readAuth = async () => {
   const wallet = useWallet();

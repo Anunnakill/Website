@@ -1,13 +1,13 @@
 {
   "limit": 700000,
-  "chainName": "mainnet",
-  "fortmatic_key": "pk_live_16DB86C1365211E5",
+  "defaultChainName": "mainnet",
+  "defaultFortmaticKey": "pk_live_16DB86C1365211E5",
 
-  "walletChain": "ethereum",
+  "walletChains": ["ethereum"],
 
   "tooltip": "Please connect the wallet first.",
 
-  "suterusu": {
+  "faceless": {
     "http": "/production",
     "siteKey": "6Lcsh84gAAAAAOLQ5ns1PnsMTpMHGgcNWJcjyVoy"
   }

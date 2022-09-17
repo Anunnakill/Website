@@ -5,13 +5,14 @@ import { onErrorCaptured, computed } from "vue";
 import darkConfig from "@/assets/style/overrides/dark.json";
 
 onErrorCaptured(() => {
-  push({ path: "/" });
-  setTimeout(() => window.location.reload(), 500);
+  push({ path: "/" }).finally(() => {
+    window.location.reload();
+  });
 });
 
+const { push } = useRouter();
 const _ = (n: any) => (document.documentElement.className = n);
 const kind = computed(() => "theme-dark");
-const { push } = useRouter();
 _(kind.value);
 </script>
 
@@ -39,6 +40,6 @@ _(kind.value);
   min-width: auto;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #10111e;
+  background-color: #151e28;
 }
 </style>

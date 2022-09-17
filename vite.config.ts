@@ -23,7 +23,7 @@ export default defineConfig({
     compressPlugin({
       ext: ".gz",
       verbose: true,
-      disable: false,
+      disable: true,
       threshold: 10240,
       algorithm: "gzip",
       deleteOriginFile: false,
@@ -96,6 +96,10 @@ export default defineConfig({
   },
   // 服务配置（代理模式）
   server: {
+    // 端口号
+    port: 3000,
+    // 地址
+    host: "127.0.0.1",
     // 自动打开
     open: true,
     // 代理

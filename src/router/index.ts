@@ -4,11 +4,16 @@ import { createRouter, RouteRecordRaw, createWebHistory } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "home",
     component: () => import("@/views/index.vue"),
     meta: { check: false },
 
     children: [
+      {
+        path: "/",
+        name: "home",
+        redirect: "wallet",
+      },
+
       {
         name: "error",
         path: "/:path(.*)*",
@@ -32,7 +37,12 @@ const router = createRouter({
 });
 
 router.beforeEach(({ meta: { check, home }, name, params }, from, next) => {
-  if (check) return next("/");
+  if (check) {
+    const { account } = useWallet().connect;
+    if (account) return next();
+    return next("/");
+  }
+
   return next();
 });
 

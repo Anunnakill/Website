@@ -9,7 +9,7 @@ const home = () => push({ name: "home" });
 <template>
   <div id="error">
     <div class="content">
-      <img src="@/assets/images/error.svg" class="icon" />
+      <img src="@/assets/images/error.svg" />
       <span class="hint"> Oops! This page could not be found. </span>
       <n-button strong secondary round type="warning" @click="home"> Back to Homepage </n-button>
     </div>
@@ -22,23 +22,21 @@ const home = () => push({ name: "home" });
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f7f6;
 
   .content {
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    .icon {
+    img {
       width: 400px;
     }
 
     .hint {
       font-size: 17px;
-      color: #0c0e10;
+      color: #0085ff;
       font-weight: bold;
       line-height: 17px;
-      font-family: Didot-Bold;
       margin: 40px 0px;
     }
   }

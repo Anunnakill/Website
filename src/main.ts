@@ -23,5 +23,5 @@ createApp(App)
   .use(router)
   .use(VueAnimXyz)
   .use(createPinia())
-  .use(VueReCaptcha, { siteKey: Env.suterusu.siteKey })
+  .use(VueReCaptcha, { siteKey: Env.faceless.siteKey, loaderOptions: { autoHideBadge: true } })
   .mount("#app");

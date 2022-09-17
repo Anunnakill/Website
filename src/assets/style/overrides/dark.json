@@ -1,9 +1,9 @@
 {
   "common": {
-    "primaryColor": "#0C0E10",
-    "primaryColorSuppl": "#0C0E10FF",
-    "primaryColorHover": "#0C0E10FF",
-    "primaryColorPressed": "#0C0E10FF",
+    "primaryColor": "#0085FF",
+    "primaryColorSuppl": "#0085FFFF",
+    "primaryColorHover": "#0085FFFF",
+    "primaryColorPressed": "#0085FFFF",
     "fontFamily": "Poppins-Regular"
   }
 }

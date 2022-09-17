@@ -1,13 +1,13 @@
 {
   "limit": 700000,
-  "chainName": "ropsten",
-  "fortmatic_key": "pk_test_DA1AB1FA469B5627",
+  "defaultChainName": "ropsten",
+  "defaultFortmaticKey": "pk_test_DA1AB1FA469B5627",
 
-  "walletChain": "ethereum",
+  "walletChains": ["ethereum"],
 
   "tooltip": "Please connect the wallet first.",
 
-  "suterusu": {
+  "faceless": {
     "http": "/staging",
     "siteKey": "6LdC6tsgAAAAAHVC3mF9LX4mOLcO433o-vMvDVIF"
   }

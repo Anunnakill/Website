@@ -8,21 +8,21 @@ const config: any = {
   walletconnect: { rpc: {} },
 
   walletlink: {
-    darkMode: false,
-    network: ENV.chainName,
-    appName: "Suter Shield V3",
+    darkMode: true,
+    appName: "Faceless",
+    network: ENV.defaultChainName,
     appLogoUrl: "https://gametaverse.png",
   },
 
   portis: {
     config: {},
-    network: ENV.chainName,
+    network: ENV.defaultChainName,
     dappId: "62b0690f-8942-4a25-902b-02a6c77ba9e0",
   },
 
   fortmatic: {
-    network: ENV.chainName,
-    apiKey: ENV.fortmatic_key,
+    network: ENV.defaultChainName,
+    apiKey: ENV.defaultFortmaticKey,
   },
 
   waxio: {
