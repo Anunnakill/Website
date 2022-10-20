@@ -9,7 +9,8 @@ body {
     border-radius: 50%;
   }
 
-  .n-modal-mask {
+  .n-modal-mask,
+  .n-drawer-mask {
     backdrop-filter: blur(10px);
   }
 }
