@@ -1,0 +1,33 @@
+html,
+body {
+  font-size: 12px;
+  font-family: Poppins-Regular;
+}
+
+* {
+  flex: 0 0 auto;
+  word-break: break-word;
+  scrollbar-width: none !important;
+  box-sizing: border-box !important;
+  -ms-overflow-style: none !important;
+  overflow: -moz-scrollbars-none !important;
+}
+
+*::-webkit-scrollbar {
+  width: 0px !important;
+  display: none !important;
+}
+
+.n-upload {
+  z-index: 1;
+}
+
+.cropper-face,
+.cropper-view-box {
+  border-radius: 50%;
+}
+
+.n-modal-mask,
+.n-drawer-mask {
+  backdrop-filter: blur(10px);
+}
