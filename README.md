@@ -1,1 +1,1 @@
-# Base Vite Web
+# Base Vite Web.
