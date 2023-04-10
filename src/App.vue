@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import { darkTheme } from "naive-ui";
-import { onErrorCaptured } from "vue";
-import { useRouter } from "vue-router";
 import darkConfig from "@/assets/style/theme/dark.json";
-
-onErrorCaptured(() => {
-  const { push } = useRouter();
-  push({ path: "/" }).finally(window.location.reload);
-});
 </script>
 
 <template>
