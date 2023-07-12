@@ -1,4 +1,4 @@
 {
-  "https": "/production",
-  "siteKey": "6Lcsh84gAAAAAOLQ5ns1PnsMTpMHGgcNWJcjyVoy"
+  "HTTPS": "/production",
+  "RECAPTCHA_SITE_KEY": "6Lcsh84gAAAAAOLQ5ns1PnsMTpMHGgcNWJcjyVoy"
 }

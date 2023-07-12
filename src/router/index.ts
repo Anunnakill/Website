@@ -1,11 +1,12 @@
 import { useWallet } from "@/store";
+import { terminalEntryFile } from "./routeTeleport";
 import { createRouter, RouteRecordRaw, createWebHistory } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: () => import("@/views/index.vue"),
+    component: () => terminalEntryFile(),
     meta: { check: false },
   },
 

@@ -8,10 +8,11 @@ export default defineConfig({
   base: "/",
   plugins: [
     vuePlugin(),
+
     compressPlugin({
       ext: ".gz",
       verbose: true,
-      disable: true,
+      disable: false,
       threshold: 10240,
       algorithm: "gzip",
       deleteOriginFile: false,
@@ -43,22 +44,27 @@ export default defineConfig({
 
     proxy: {
       "/staging": {
-        target: "",
         changeOrigin: true,
-        rewrite: path => path.replace(/^\/staging/, ""),
+        target: "https://data-platform.staging.muadao.build",
+        rewrite: localDevelopmentAddress => localDevelopmentAddress.replace(/^\/staging/, ""),
       },
 
       "/production": {
-        target: "",
         changeOrigin: true,
-        rewrite: path => path.replace(/^\/production/, ""),
+        target: "https://data-platform.muadao.build",
+        rewrite: localDevelopmentAddress => localDevelopmentAddress.replace(/^\/production/, ""),
       },
     },
   },
 
   css: {
     postcss: {
-      plugins: [autoprefixer({ overrideBrowserslist: ["last 20 versions"], grid: true })],
+      plugins: [
+        autoprefixer({
+          overrideBrowserslist: ["last 20 versions"],
+          grid: true,
+        }),
+      ],
     },
 
     preprocessorOptions: {

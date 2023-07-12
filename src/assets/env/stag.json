@@ -1,4 +1,4 @@
 {
-  "https": "/staging",
-  "siteKey": "6LdC6tsgAAAAAHVC3mF9LX4mOLcO433o-vMvDVIF"
+  "HTTPS": "/staging",
+  "RECAPTCHA_SITE_KEY": "6LdC6tsgAAAAAHVC3mF9LX4mOLcO433o-vMvDVIF"
 }

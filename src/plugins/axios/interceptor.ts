@@ -4,7 +4,7 @@ import { loadingBar } from "@/utils";
 
 const _axios = axios.create({
   timeout: 300000,
-  baseURL: ENV.https,
+  baseURL: ENV.HTTPS,
   responseType: "json",
 });
 

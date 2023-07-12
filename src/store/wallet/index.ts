@@ -1,23 +1,17 @@
 import { defineStore } from "pinia";
-import { JsonRpcSigner } from "ethers";
-import { randomString } from "@/utils/random";
-
-interface IWeb3Provider {
-  request: (request: { method: string; params?: Array<any> }) => Promise<any>;
-  on: (event: string, callback: (params?: any) => void) => void;
-  isMetaMask: boolean;
-}
+import { signMessage } from "@/utils";
+import { JsonRpcSigner, Eip1193Provider } from "ethers";
 
 interface IWalletSDK {
-  web3Provider: IWeb3Provider;
-  signer: JsonRpcSigner;
   address: string;
+  signer: JsonRpcSigner;
+  web3Provider: Eip1193Provider;
 }
 
 export const useWallet = defineStore("wallet", {
   state: () => ({
     connect: {} as IWalletSDK,
-    auth: { sign_content: randomString(), signature: "" },
+    auth: { sign_content: signMessage(), signature: "" },
   }),
 
   getters: {},
