@@ -6,6 +6,7 @@ import compressPlugin from "vite-plugin-compression";
 
 export default defineConfig({
   base: "/",
+
   plugins: [
     vuePlugin(),
 

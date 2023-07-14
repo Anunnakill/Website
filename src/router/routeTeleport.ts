@@ -1,7 +1,7 @@
 import { isApp } from "@/utils";
 
-const terminalEntryFile = () => {
-  return isApp() ? import("@/views/app.vue") : import("@/views/desktop.vue");
+const hallEntryFile = () => {
+  return isApp() ? import("@/views/app/hall.vue") : import("@/views/desktop/hall.vue");
 };
 
-export { terminalEntryFile };
+export { hallEntryFile };

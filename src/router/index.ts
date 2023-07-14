@@ -1,12 +1,11 @@
 import { useWallet } from "@/store";
-import { terminalEntryFile } from "./routeTeleport";
+import { hallEntryFile } from "./routeTeleport";
 import { createRouter, RouteRecordRaw, createWebHistory } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "home",
-    component: () => terminalEntryFile(),
+    component: () => hallEntryFile(),
     meta: { check: false },
   },
 
@@ -29,7 +28,7 @@ const router = createRouter({
   routes,
 });
 
-router.beforeEach(({ meta: { check, home }, name, params }, from, next) => {
+router.beforeEach(({ meta: { check, home } }, from, next) => {
   if (check) {
     const { address } = useWallet().connect;
     if (address) return next();

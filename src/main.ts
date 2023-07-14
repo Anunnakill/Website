@@ -13,9 +13,9 @@ import "atropos/scss";
 import "normalize.css";
 import "@animxyz/core";
 import "./assets/font/index.scss";
-import "./assets/style/reset.scss";
-import "./assets/style/animate.scss";
 import "cropperjs/dist/cropper.min.css";
+import "./assets/style/global/reset.scss";
+import "./assets/style/global/animate.scss";
 
 createApp(App)
   .use(i18n)

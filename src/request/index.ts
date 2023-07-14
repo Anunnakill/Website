@@ -1,3 +1,3 @@
-const root = "/public_api";
+import { root } from "./config";
 
 export {};
