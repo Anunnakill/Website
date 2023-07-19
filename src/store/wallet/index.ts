@@ -1,16 +1,10 @@
 import { defineStore } from "pinia";
 import { signMessage } from "@/utils";
-import { JsonRpcSigner, Eip1193Provider } from "ethers";
-
-interface IWalletSDK {
-  address: string;
-  signer: JsonRpcSigner;
-  web3Provider: Eip1193Provider;
-}
+import type { WalletSDK } from "wallet-ethers-next";
 
 export const useWallet = defineStore("wallet", {
   state: () => ({
-    connect: {} as IWalletSDK,
+    connect: {} as WalletSDK,
     auth: { sign_content: signMessage(), signature: "" },
   }),
 
