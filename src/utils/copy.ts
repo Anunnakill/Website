@@ -1,4 +1,4 @@
-import { message } from "./command";
+import { message } from "./feedback";
 
 const userCopy = async (text: string) => {
   await navigator.clipboard.writeText(text);

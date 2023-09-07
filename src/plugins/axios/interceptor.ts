@@ -11,7 +11,6 @@ const _axios = axios.create({
 _axios.interceptors.request.use(
   config => {
     loadingBar.start();
-    config.method?.toUpperCase() === "POST" && (config.data = JSON.stringify(config.data));
     return config;
   },
 

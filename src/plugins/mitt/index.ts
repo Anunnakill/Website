@@ -1,5 +1,5 @@
-import Mitt from "mitt";
+import mitt from "mitt";
 
-const Emitter = Mitt();
+const emitter = mitt();
 
-export default Emitter;
+export { emitter };

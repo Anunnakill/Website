@@ -25,11 +25,13 @@
     "ethers": "^6.6.4",
     "gsap": "^3.11.4",
     "lodash": "^4.17.21",
+    "canvas-confetti": "^1.6.0",
     "mitt": "^3.0.0",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.30",
     "swiper": "^10.0.3",
     "three": "^0.149.0",
+    "localforage": "^1.10.0",
     "typed.js": "^2.0.12",
     "vue": "^3.2.45",
     "vue-i18n": "^9.2.2",
@@ -39,6 +41,7 @@
     "xgplayer": "^2.32.2"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.6.0",
     "@types/crypto-js": "^4.1.1",
     "@types/node": "^18.13.0",
     "@types/three": "^0.149.0",

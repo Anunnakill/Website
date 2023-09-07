@@ -1,14 +1,14 @@
 import { App } from "vue";
-import Mitt from "@/plugins/mitt";
+import { emitter } from "@/plugins/mitt";
 
 const mouseHover = {
   mounted(el: Element) {
     el.addEventListener("mouseenter", () => {
-      Mitt.emit("hover");
+      emitter.emit("hover");
     });
 
     el.addEventListener("mouseleave", () => {
-      Mitt.emit("unhover");
+      emitter.emit("unhover");
     });
   },
 };

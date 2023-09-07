@@ -1,10 +1,10 @@
 import { defineStore } from "pinia";
+import { IState } from "./interface";
 import { signMessage } from "@/utils";
-import type { WalletSDK } from "wallet-ethers-next";
 
 export const useWallet = defineStore("wallet", {
-  state: () => ({
-    connect: {} as WalletSDK,
+  state: (): IState => ({
+    connect: {} as IState["connect"],
     auth: { sign_content: signMessage(), signature: "" },
   }),
 
