@@ -6,8 +6,10 @@ import router from "@/router";
 import i18n from "@/plugins/i18n";
 import naive from "@/plugins/naive";
 import VueAnimXyz from "@animxyz/vue3";
-import Directive from "@/plugins/directive";
+import VueSentrys from "@/plugins/sentry";
+import Directives from "@/plugins/directive";
 import GoogleRecaptcha from "@/plugins/recaptcha";
+import "@google/model-viewer/dist/model-viewer.min.js";
 
 import "atropos/scss";
 import "normalize.css";
@@ -21,8 +23,10 @@ createApp(App)
   .use(i18n)
   .use(naive)
   .use(router)
-  .use(Directive)
+  .use(Directives)
   .use(VueAnimXyz)
+  .use(VueSentrys)
   .use(createPinia())
   .use(GoogleRecaptcha)
+
   .mount("#app");
