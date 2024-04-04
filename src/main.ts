@@ -6,7 +6,6 @@ import router from "@/router";
 import i18n from "@/plugins/i18n";
 import naive from "@/plugins/naive";
 import VueAnimXyz from "@animxyz/vue3";
-import VueSentrys from "@/plugins/sentry";
 import Directives from "@/plugins/directive";
 import GoogleRecaptcha from "@/plugins/recaptcha";
 import "@google/model-viewer/dist/model-viewer.min.js";
@@ -25,7 +24,6 @@ createApp(App)
   .use(router)
   .use(Directives)
   .use(VueAnimXyz)
-  .use(VueSentrys)
   .use(createPinia())
   .use(GoogleRecaptcha)
 

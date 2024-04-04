@@ -31,4 +31,5 @@ body {
 .n-modal-mask,
 .n-drawer-mask {
   backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.9);
 }

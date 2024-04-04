@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div id="hall"></div>
+  <div id="home"></div>
 </template>
 
 <style lang="scss" scoped>
-#hall {
+#home {
   flex: 1;
   display: flex;
   flex-direction: column;
