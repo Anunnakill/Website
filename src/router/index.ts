@@ -1,11 +1,17 @@
 import { useWallet } from "@/store";
-import { hallEntryFile } from "./routeTeleport";
+import { homeEntryFile } from "./routeTeleport";
 import { createRouter, RouteRecordRaw, createWebHistory } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
   {
+    redirect: "/home",
+    meta: { check: false },
     path: "/",
-    component: () => hallEntryFile(),
+  },
+
+  {
+    path: "/home",
+    component: () => homeEntryFile(),
     meta: { check: false },
   },
 

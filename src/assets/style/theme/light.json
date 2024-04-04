@@ -1,9 +1,18 @@
 {
   "common": {
-    "primaryColor": "#0085FF",
+    "primaryColor": "#7DF6CA",
     "fontFamily": "Inter-Regular",
-    "primaryColorSuppl": "#0085FFFF",
-    "primaryColorHover": "#0085FFFF",
-    "primaryColorPressed": "#0085FFFF"
+    "primaryColorSuppl": "#7DF6CA",
+    "primaryColorHover": "#7DF6CA",
+    "primaryColorPressed": "#7DF6CA"
+  },
+
+  "Popover": {
+    "fontSize": "12px",
+    "arrowHeight": "6px",
+    "borderRadius": "8px",
+    "padding": "12px 16px",
+    "textColor": "#ffffff80",
+    "color": "#000000"
   }
 }

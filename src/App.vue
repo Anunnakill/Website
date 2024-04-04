@@ -23,10 +23,11 @@ import darkConfig from "@/assets/style/theme/dark.json";
 
 <style lang="scss" scoped>
 #app {
+  width: 100%;
   display: flex;
-  min-width: auto;
-  min-height: 100vh;
+  overflow: hidden;
+  min-height: 100svh;
   flex-direction: column;
-  background-color: #151e28;
+  background-color: #090b11;
 }
 </style>

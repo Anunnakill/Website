@@ -46,13 +46,13 @@ export default defineConfig({
     proxy: {
       "/staging": {
         changeOrigin: true,
-        target: "https://data-platform.staging.muadao.build",
+        target: "https://data-platform.staging.muaverse.build",
         rewrite: localDevelopmentAddress => localDevelopmentAddress.replace(/^\/staging/, ""),
       },
 
       "/production": {
         changeOrigin: true,
-        target: "https://data-platform.muadao.build",
+        target: "https://data-platform.muaverse.build",
         rewrite: localDevelopmentAddress => localDevelopmentAddress.replace(/^\/production/, ""),
       },
     },
